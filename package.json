@@ -30,8 +30,5 @@
     "globals": "^17.7.0",
     "prettier": "3.9.4",
     "typescript-eslint": "^8.63.0"
-  },
-  "dependencies": {
-    
   }
 }
