@@ -1,0 +1,13 @@
+{
+  "name": "design-system",
+  "types": "module",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Łukasz Migut <lmigut@onedevrepublic.com>",
+  "description": "Design system library for my projects based on web components",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["design system", "web components", "ui library", "storybook", "lit"],
+  "license": "MIT"
+}
