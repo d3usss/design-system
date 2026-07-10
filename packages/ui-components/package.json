@@ -1,0 +1,25 @@
+{
+  "name": "ui-components",
+  "version": "0.1.0",
+  "description": "UI Library",
+  "license": "MIT",
+  "author": "Łukasz Migut <lmigut@onedevrepublic.com>",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "build:types": "tsc --emitDeclarationOnly"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@types/node": "^26.1.1",
+    "rollup": "^4.62.2",
+    "rollup-plugin-dts": "^6.4.1",
+    "rollup-plugin-esbuild": "^6.2.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "lit": "^3.3.3"
+  }
+}

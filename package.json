@@ -2,7 +2,7 @@
   "name": "design-system",
   "types": "module",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "Łukasz Migut <lmigut@onedevrepublic.com>",
   "description": "Design system library for my projects based on web components",
   "scripts": {

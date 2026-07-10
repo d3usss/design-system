@@ -10,12 +10,19 @@ import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended"
 
 export default defineConfig([
   {
-    files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
+    ignores: ["**/dist/**", "**/node_modules/**"],
+  },
+  {
+    files: ["**/*.{js,mjs,cjs}"],
     plugins: { js },
     extends: ["js/recommended"],
-    languageOptions: { globals: globals.browser },
+    languageOptions: { globals: { ...globals.browser, ...globals.node } },
   },
-  tseslint.configs.recommended,
+  {
+    files: ["**/*.{ts,mts,cts}"],
+    extends: tseslint.configs.recommended,
+    languageOptions: { globals: { ...globals.browser, ...globals.node } },
+  },
   {
     files: ["**/*.json"],
     plugins: { json },
