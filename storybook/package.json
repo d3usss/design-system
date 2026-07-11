@@ -9,7 +9,7 @@
     "prebuild:storybook": "pnpm --filter ui-components build",
     "build-storybook": "pnpm prebuild:storybook && storybook build",
     "preview": "vite preview",
-    "chromatic": "export $(grep -v '^#' ../.env | xargs) && npx chromatic --project-token \"$CHROMATIC_PROJECT_TOKEN\""
+    "chromatic": "npx chromatic --project-token chpt_ed5728e851b9a7b"
   },
   "dependencies": {
     "lit": "^3.3.3",
