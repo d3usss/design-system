@@ -50,8 +50,8 @@ pnpm install
 
 1. [x] Add branding for Storybook
 2. [x] Deploy Storybook to Chromatic and make it public
-3. [ ] Add Private domain to public ODR Storybook
-4. [ ] Add Github Actions to publish and build Storybook on every master push
+3. [ ] Add Github Actions to publish and build Storybook on every master push
+4. [ ] Add Private domain to public ODR Storybook
 5. [ ] Create and publish npm library based on ui-components
 6. [ ] Add Husky for running linters, code formatters, and tests before push
 7. [ ] Add commit validator for meaningful commits
