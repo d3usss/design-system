@@ -20,7 +20,7 @@ The project is in early development. I am starting with core foundations and wil
 
 ## 🗂️ Folder Structure
 
-```
+```markdown
 /design-system
     /packages
         /ui-components
@@ -29,16 +29,16 @@ The project is in early development. I am starting with core foundations and wil
 
 ## 🚀 Getting Started
 
-###  Prerequisites
+### Prerequisites
 
-```
+```markdown
   Node.js >= 18
   pnpm
 ```
 
 ### Installation
 
-```
+```bash
 git clone https://github.com/lmigut/design-system.git
 cd design-system
 pnpm install
@@ -57,6 +57,7 @@ pnpm install
 9. [ ] Implement theme system based on design tokens
 10. [ ] Create Dark and Light mode in Storybook and components
 11. [ ] Add shared library for global TypeScript, ESLint, and Prettier config
+12. [ ] Add MIT License
 
 ## 📌 Status
 
@@ -64,9 +65,8 @@ In Progress (Beta) — foundations are being built. Expect frequent changes.
 
 ## 👤 Author
 
-Łukasz Migut — lmigut@onedevrepublic.com
+Łukasz Migut — <lmigut@onedevrepublic.com>
 
 ## 📄 License
 
 MIT — TODO (license file will be added soon)
-
