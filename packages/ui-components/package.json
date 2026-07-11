@@ -5,7 +5,19 @@
   "license": "MIT",
   "author": "Łukasz Migut <lmigut@onedevrepublic.com>",
   "type": "module",
-  "main": "index.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rm -rf dist && rollup -c",
     "dev": "rollup -c -w",

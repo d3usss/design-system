@@ -5,12 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006 --no-open",
+    "prebuild": "pnpm --filter ui-components build",
     "build": "tsc && vite build",
+    "prebuild:storybook": "pnpm --filter ui-components build",
     "build:storybook": "storybook build",
     "start": "vite preview"
   },
   "dependencies": {
-    "lit": "^3.3.3"
+    "lit": "^3.3.3",
+    "ui-components": "workspace:packages"
   },
   "devDependencies": {
     "typescript": "~6.0.2",
