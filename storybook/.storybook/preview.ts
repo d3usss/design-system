@@ -1,5 +1,7 @@
 import type { Preview } from "@storybook/web-components-vite";
 
+import { themes } from "storybook/theming";
+
 const preview: Preview = {
   parameters: {
     controls: {
@@ -8,13 +10,13 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
-
-    a11y: {
-      // 'todo' - show a11y violations in the test UI only
-      // 'error' - fail CI on a11y violations
-      // 'off' - skip a11y checks entirely
-      test: "todo",
+    docs: {
+      theme: themes.light,
     },
+    a11y: {
+      test: "error",
+    },
+    layout: "centered",
   },
 };
 
