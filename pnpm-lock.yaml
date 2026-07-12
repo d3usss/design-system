@@ -72,9 +72,6 @@ importers:
       '@web/test-runner-commands':
         specifier: ^1.0.0
         version: 1.0.0
-      happy-dom:
-        specifier: ^20.10.6
-        version: 20.10.6
       jsdom:
         specifier: ^29.1.1
         version: 29.1.1
@@ -4297,7 +4294,8 @@ snapshots:
 
   '@types/unist@3.0.3': {}
 
-  '@types/whatwg-mimetype@3.0.2': {}
+  '@types/whatwg-mimetype@3.0.2':
+    optional: true
 
   '@types/ws@7.4.7':
     dependencies:
@@ -4306,6 +4304,7 @@ snapshots:
   '@types/ws@8.18.1':
     dependencies:
       '@types/node': 26.1.1
+    optional: true
 
   '@typescript-eslint/eslint-plugin@8.63.0(@typescript-eslint/parser@8.63.0(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3))(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3)':
     dependencies:
@@ -4745,6 +4744,7 @@ snapshots:
   buffer-image-size@0.6.4:
     dependencies:
       '@types/node': 26.1.1
+    optional: true
 
   bundle-name@4.1.0:
     dependencies:
@@ -4935,7 +4935,8 @@ snapshots:
 
   encodeurl@1.0.2: {}
 
-  entities@7.0.1: {}
+  entities@7.0.1:
+    optional: true
 
   entities@8.0.0: {}
 
@@ -5217,6 +5218,7 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+    optional: true
 
   has-flag@4.0.0: {}
 
@@ -6601,7 +6603,8 @@ snapshots:
 
   webpack-virtual-modules@0.6.2: {}
 
-  whatwg-mimetype@3.0.0: {}
+  whatwg-mimetype@3.0.0:
+    optional: true
 
   whatwg-mimetype@5.0.0: {}
 
