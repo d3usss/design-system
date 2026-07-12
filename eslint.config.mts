@@ -10,7 +10,12 @@ import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended"
 
 export default defineConfig([
   {
-    ignores: ["**/dist/**", "**/node_modules/**", "**/storybook-static/**"],
+    ignores: [
+      "**/dist/**",
+      "**/node_modules/**",
+      "**/storybook-static/**",
+      "**/coverage/**",
+    ],
   },
   {
     files: ["**/*.{js,mjs,cjs}"],
