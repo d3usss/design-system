@@ -12,6 +12,7 @@
     "chromatic": "npx chromatic --project-token chpt_ed5728e851b9a7b"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.8",
     "lit": "^3.3.3",
     "ui-components": "workspace:packages"
   },
@@ -24,6 +25,7 @@
     "@vitest/browser-playwright": "^4.1.10",
     "@vitest/coverage-v8": "^4.1.10",
     "chromatic": "^18.0.1",
+    "normalize.css": "^8.0.1",
     "playwright": "^1.61.1",
     "storybook": "10.4.6",
     "typescript": "~6.0.2",

@@ -1,0 +1,78 @@
+@import "normalize.css";
+
+:root {
+  /**
+   * Global color variables
+   */
+  --main-accent: #ff7a01;
+  --main-accent-hover: #eb9c54;
+  --text: oklch(70.8% 0 0);
+  --muted: #6b7280;
+  --bg: #ffffff;
+
+  /**
+   * Global font variables
+   */
+  --default-font-size: 1.4rem;
+}
+
+html,
+body {
+  color: var(--text);
+  background: var(--bg);
+  display: block;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji",
+    sans-serif;
+}
+
+#container {
+  max-width: 85rem;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: var(--default-font-size);
+}
+
+#container h2 {
+  color: var(--main-accent);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+#container p {
+  color: var(--muted);
+  margin: 0;
+}
+
+#container a {
+  color: var(--main-accent);
+  text-decoration: none;
+}
+
+#container a:hover {
+  color: var(--main-accent-hover);
+  text-decoration: underline;
+}
+
+#container li {
+  line-height: 1;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
