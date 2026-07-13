@@ -1,22 +1,26 @@
-import { LitElement, html, css } from "lit";
-import { customElement } from "lit/decorators.js";
+import { html, css } from "lit";
+import { customElement, property } from "lit/decorators.js";
+import { BaseClass } from "../../helpers/BaseClass";
 
-import en from "@translations/en";
-
-type WorkExperienceTranslations = (typeof en)["odr-work-experience"];
+export type WorkExperienceTranslations = {
+  title: string;
+  experienceItems: {
+    translations: {
+      period: string;
+      company: string;
+      role: string;
+      bullets: string[];
+    };
+    links: {
+      company: string;
+    };
+  }[];
+};
 
 @customElement("odr-work-experience")
-export class WorkExperience extends LitElement {
-  static properties = {
-    translations: { attribute: false },
-  };
-
+export class WorkExperience extends BaseClass {
+  @property({ attribute: false })
   translations!: WorkExperienceTranslations;
-
-  constructor() {
-    super();
-    this.translations = en["odr-work-experience"];
-  }
 
   static styles = [
     css`
@@ -47,6 +51,10 @@ export class WorkExperience extends LitElement {
   ];
 
   render() {
+    if (!this.translations) {
+      return html``;
+    }
+
     return html`
       <section>
         <h2>${this.translations.title}</h2>
@@ -54,7 +62,11 @@ export class WorkExperience extends LitElement {
           (item) => html`
             <div class="item">
               <div class="icon">
-                <img src="../../assets/signet.png" alt="signet" width="24" />
+                <img
+                  src="../../assets/logo-mark.png"
+                  alt="logo mark"
+                  width="24"
+                />
               </div>
               <div>
                 <div class="date">${item.translations.period}</div>

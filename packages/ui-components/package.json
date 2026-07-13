@@ -28,6 +28,7 @@
     "test:ui": "vitest --ui"
   },
   "devDependencies": {
+    "@lit/localize-tools": "^0.8.2",
     "@open-wc/testing": "4.0.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@types/node": "^26.1.1",
@@ -41,6 +42,7 @@
     "vitest": "^4.1.10"
   },
   "dependencies": {
+    "@lit/localize": "^0.12.2",
     "lit": "^3.3.3"
   }
 }

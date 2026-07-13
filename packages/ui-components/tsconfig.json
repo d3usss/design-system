@@ -16,7 +16,6 @@
       "@root/*": ["./*"],
       "@components/*": ["./src/components/*"],
       "@styles/*": ["./src/styles/*"],
-      "@translations/*": ["./src/translations/*"],
       "@helpers/*": ["./src/helpers/*"]
     },
     "skipLibCheck": true,
