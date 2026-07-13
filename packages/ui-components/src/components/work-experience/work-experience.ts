@@ -2,6 +2,8 @@ import { html, css } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import { BaseClass } from "../../helpers/BaseClass";
 
+const logoMarkUrl = new URL("../../assets/logo-mark.png", import.meta.url).href;
+
 export type WorkExperienceTranslations = {
   title: string;
   experienceItems: {
@@ -62,11 +64,7 @@ export class WorkExperience extends BaseClass {
           (item) => html`
             <div class="item">
               <div class="icon">
-                <img
-                  src="../../assets/logo-mark.png"
-                  alt="logo mark"
-                  width="24"
-                />
+                <img src="${logoMarkUrl}" alt="logo mark" width="24" />
               </div>
               <div>
                 <div class="date">${item.translations.period}</div>

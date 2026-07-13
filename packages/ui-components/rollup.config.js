@@ -4,14 +4,8 @@ import resolve from "@rollup/plugin-node-resolve";
 import esbuild from "rollup-plugin-esbuild";
 import dts from "rollup-plugin-dts";
 
-const __filename =
-  typeof fileURLToPath !== "undefined"
-    ? fileURLToPath(import.meta.url)
-    : undefined;
-
-const __dirname =
-  typeof __filename !== "undefined" ? path.dirname(__filename) : process.cwd();
-
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const pkg = { input: "src/index.ts" };
 
 export default [

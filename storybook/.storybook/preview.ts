@@ -1,4 +1,6 @@
 import type { Preview } from "@storybook/web-components-vite";
+// @ts-expect-error Storybook preview config allows side-effect CSS imports.
+import "../src/themes/odr-global.css";
 
 import { themes } from "storybook/theming";
 

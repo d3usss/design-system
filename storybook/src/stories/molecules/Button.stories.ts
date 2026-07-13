@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/web-components-vite";
 import { html } from "lit";
 
-import { UiButton } from "ui-components";
+import { Button } from "ui-components";
 
-const meta: Meta<UiButton> = {
+const meta: Meta<Button> = {
   title: "Molecules/Button",
-  component: "UiButton",
+  component: "ui-button",
   tags: ["autodocs"],
   argTypes: {
     name: { control: "text" },
@@ -14,7 +14,7 @@ const meta: Meta<UiButton> = {
 };
 
 export default meta;
-type Story = StoryObj<UiButton>;
+type Story = StoryObj<Button>;
 
 export const Primary: Story = {
   args: {
