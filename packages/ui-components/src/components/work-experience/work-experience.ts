@@ -1,8 +1,7 @@
 import { html, css } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import { BaseClass } from "../../helpers/BaseClass";
-
-const logoMarkUrl = new URL("../../assets/logo-mark.png", import.meta.url).href;
+import { BaseClass } from "@helpers/BaseClass";
+import logoMarkUrl from "../../assets/logo-mark.png";
 
 export type WorkExperienceTranslations = {
   title: string;

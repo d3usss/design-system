@@ -31,7 +31,10 @@
   "devDependencies": {
     "@lit/localize-tools": "^0.8.2",
     "@open-wc/testing": "4.0.0",
+    "@rollup/plugin-alias": "^6.0.0",
+    "@rollup/plugin-image": "^3.0.3",
     "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-url": "^8.0.2",
     "@types/node": "^26.1.1",
     "@vitest/ui": "^4.1.10",
     "@web/test-runner-commands": "^1.0.0",
