@@ -1,4 +1,4 @@
-on: ["push", "pull_request"]
+on: ["pull_request"]
 
 name: Test Coveralls
 
@@ -28,4 +28,12 @@ jobs:
         run: pnpm ci && pnpm run test-coverage
 
       - name: Coveralls
+        id: coveralls
+        continue-on-error: true
         uses: coverallsapp/github-action@v2.3.6
+
+      - name: Coveralls upload warning
+        if: ${{ steps.coveralls.outcome == 'failure' }}
+        run: |
+          echo "::warning::Coveralls upload failed (likely transient 5xx/network issue)."
+          echo "::warning::Rerun workflow or retry later."
