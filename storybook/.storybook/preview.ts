@@ -2,7 +2,8 @@ import type { Preview } from "@storybook/web-components-vite";
 import { html } from "lit";
 import { themes } from "storybook/theming";
 
-// Import web components to ensure they're registered in Chromatic
+// @ts-expect-error fontsource/inter doesn't have type declarations
+import "@fontsource/inter/index.css";
 import "ui-components";
 // @ts-expect-error Storybook preview config allows side-effect CSS imports.
 import "../src/themes/odr-global.css";

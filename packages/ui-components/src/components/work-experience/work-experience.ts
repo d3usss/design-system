@@ -38,7 +38,7 @@ export class WorkExperience extends BaseClass {
         display: flex;
         gap: 2.5rem;
         margin: 0;
-        padding-bottom: 1rem;
+        padding-bottom: 0.3rem;
       }
 
       .date {

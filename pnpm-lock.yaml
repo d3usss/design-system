@@ -111,6 +111,9 @@ importers:
 
   storybook:
     dependencies:
+      '@fontsource/inter':
+        specifier: ^5.2.8
+        version: 5.2.8
       lit:
         specifier: ^3.3.3
         version: 3.3.3
@@ -499,6 +502,9 @@ packages:
     peerDependenciesMeta:
       '@noble/hashes':
         optional: true
+
+  '@fontsource/inter@5.2.8':
+    resolution: {integrity: sha512-P6r5WnJoKiNVV+zvW2xM13gNdFhAEpQ9dQJHt3naLvfg+LkF2ldgSLiF4T41lf1SQCM9QmkqPTn4TH568IRagg==}
 
   '@hapi/bourne@3.0.0':
     resolution: {integrity: sha512-Waj1cwPXJDucOib4a3bAISsKJVb15MKi9IvmTI/7ssVEm6sywXGjVJDhl6/umt1pK1ZS7PacXU3A1PmFKHEZ2w==}
@@ -3733,6 +3739,8 @@ snapshots:
       '@types/chai': 4.3.20
 
   '@exodus/bytes@1.15.1': {}
+
+  '@fontsource/inter@5.2.8': {}
 
   '@hapi/bourne@3.0.0': {}
 

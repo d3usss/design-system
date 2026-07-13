@@ -11,7 +11,7 @@ const workExperienceTranslations = translations[
 const meta: Meta<
   WorkExperience & { translations: WorkExperienceTranslations }
 > = {
-  title: "Molecules/Work Experience",
+  title: "Organisms/Work Experience",
   component: "odr-work-experience",
   tags: ["autodocs"],
   argTypes: {
